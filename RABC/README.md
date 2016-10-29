@@ -31,8 +31,8 @@ WHERE MenuID IN
 2.	通过用户ID从用户&角色表中查找该用户对应角色的集合  
 3.	从权限表中通过用户ID或用户对应角色集合，查找对象名为页面 AND 访问权限为允许的对应对象的ID  
 4.	从页面表中通过对象ID，查找对应页面名称  
-#运行结果：    
-![运行结果](http://h.hiphotos.baidu.com/image/pic/item/0eb30f2442a7d933df1b1baea54bd11372f001bf.jpg)
+# 运行结果：    
+![运行结果](http://h.hiphotos.baidu.com/image/pic/item/0eb30f2442a7d933df1b1baea54bd11372f001bf.jpg)  
 #查询订单页面可操作按钮的SQL语句  
 SELECT PrivilegeMaster,PrivilegeAccess,BtnName  
 FROM cf_privilege AS cp LEFT JOIN sys_button AS sb ON cp.PrivilegeAccessKey=sb.BtnID  
