@@ -58,6 +58,11 @@ WHERE
 						(SELECT UserID  
 						FROM cf_user  
 						WHERE LoginName='test1'  
+						)	
+				))  
+		AND  PrivilegeAccess='Sys_Button'   
+		AND 	PrivilegeOperation='Permit'   
+		AND PrivilegeAccessKey IN (SELECT BtnID  
 FROM sys_button  
 WHERE MenuNo=(SELECT MenuNo  
 							FROM sys_menu  
